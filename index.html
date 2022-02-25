@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator Test</title>
+    <link rel="stylesheet" href="styles/calculator.css">
+</head>
+<body>
+    <h1>JavaScript<br>Calculator</h1>
+    <div class="container">
+        <div class="total">
+            <p id="total-input"></p>
+        </div>
+        <div class="one">
+            <button class="btn" onclick="btnOne()">1</button>
+        </div>
+        <div class="two">
+            <button class="btn" onclick="btnTwo()">2</button>
+        </div>
+        <div class="three">
+            <button class="btn" onclick="btnThree()">3</button>
+        </div>
+        <div class="four">
+            <button class="btn" onclick="btnFour()">4</button>
+        </div>
+        <div class="five">
+            <button class="btn" onclick="btnFive()">5</button>
+        </div>
+        <div class="six">
+            <button class="btn" onclick="btnSix()">6</button>
+        </div>
+        <div class="seven">
+            <button class="btn" onclick="btnSeven()">7</button>
+        </div>
+        <div class="eight">
+            <button class="btn" onclick="btnEight()">8</button>
+        </div>
+        <div class="nine">
+            <button class="btn" onclick="btnNine()">9</button>
+        </div>
+        <div class="zero">
+            <button class="btn" onclick="btnZero()">0</button>
+        </div>
+        <div class="add">
+            <button class="btn btn-light" onclick="btnAdd()">+</button>
+        </div>
+        <div class="subtract">
+            <button class="btn btn-light" onclick="btnSubtract()">-</button>
+        </div>
+        <div class="multiply">
+            <button class="btn btn-light" onclick="btnMultiply()">x</button>
+        </div>
+        <div class="divide">
+            <button class="btn btn-light" onclick="btnDivide()">&#xF7;</button>
+        </div>
+        <div class="point" onclick="btnPoint()">
+            <button class="btn">.</button>
+        </div>
+        <div class="equal" onclick="calculate()">
+            <button class="btn">=</button>
+        </div>
+        <div class="mrecall" onclick="btnMCapture()">
+            <button class="btn">M<span class="plussign">+</span></button>
+        </div>
+        <div class="mcapture" onclick="btnMRecall()">
+            <button class="btn">MR</button>
+        </div>
+        <div class="mclear" onclick="btnMClear()">
+            <button class="btn">MC</button>
+        </div>
+        <div class="clear">
+            <button class="btn btn-light btn-clear" onclick="clearIt()">C</button>
+        </div>
+    </div>
+    <script src="scripts/calculator.js"></script>
+</body>
+</html>

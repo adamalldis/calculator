@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+@font-face {
+    font-family: "ds-digi";
+    src: url("../fonts/ds-digi.ttf");
+}
+
+:root {
+    --calc-pink: #ff00ae;
+    --calc-purple: #9400fe;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 20px;
+    color: rgb(216, 0, 216);
+    text-shadow: 2px 2px 4px #AAA;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1.5fr repeat(5, 1fr);
+    grid-template-areas: 
+        "total total total total"
+        "clear mcapture mrecall mclear"
+        "one two three add"
+        "four five six subtract"
+        "seven eight nine multiply"
+        "point zero equal divide" ;
+    place-content: center;
+    width: 220px;
+    background-color: var(--calc-pink);
+    border-radius: 5px;
+    border-right: 4px solid var(--calc-pink);
+    border-bottom: 4px solid var(--calc-pink);
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 10px rgb(167, 167, 167);
+    background-image: linear-gradient(to bottom right, var(--calc-pink), var(--calc-purple));
+}
+
+#total-input {
+    font-family: ds-digi, sans-serif;
+    font-size: 2.5rem;
+    padding-right: 5px;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.total {
+    display: grid;
+    grid-area: total; 
+    place-content: center flex-end;
+    height: 60px;
+    margin: 5px 5px 10px 5px;
+    padding-right: 5px;
+    background-image: linear-gradient(to bottom right, rgb(0, 255, 234), var(--calc-purple));
+    border-top: 2px solid rgb(87, 42, 138);
+    border-left: 2px solid rgb(87, 42, 138);
+    border-radius: 5px;
+}
+.one { grid-area: one; }
+.two { grid-area: two; }
+.three { grid-area: three; }
+.four { grid-area: four; }
+.five { grid-area: five; }
+.six { grid-area: six; }
+.seven { grid-area: seven; }
+.eight { grid-area: eight; }
+.nine { grid-area: nine; }
+.zero { grid-area: zero; }
+.add { grid-area: add; }
+.subtract { grid-area: subtract; }
+.multiply { grid-area: multiply; }
+.divide { grid-area: divide; }
+.equal { grid-area: equal; }
+.clear { grid-area: clear; }
+.point { grid-area: point; }
+
+.btn {
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    width: 40px;
+    margin: 5px;
+    padding: 10px;
+    border-right: 2px solid rgb(59, 11, 89);
+    border-bottom: 2px solid rgb(59, 11, 89);
+    border-radius: 5px ;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right, rgb(59, 11, 89), rgb(255, 0, 212));
+}
+
+.btn:active {
+    border: none;
+    color: #FFF;
+    border-left: 2px solid rgb(35, 4, 54);
+    border-top: 2px solid rgb(35, 4, 54);
+}
+
+.btn-light {
+    color: rgb(62, 1, 82);
+    background-image: linear-gradient(to bottom right, rgb(157, 0, 255), rgb(0, 217, 255));
+}
+
+.btn-light:active {
+    color: rgb(62, 1, 82);
+background-image: linear-gradient(to bottom right, rgb(157, 0, 255), rgb(0, 217, 255));
+}
