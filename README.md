@@ -1,2 +1,2 @@
-# test-calculator
+# calculator
 Experimenting with beginner JavaScript concepts.
